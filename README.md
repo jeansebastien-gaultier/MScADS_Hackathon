@@ -14,4 +14,32 @@ This Hackathon was organised by the Master of Science in Applied Data Science Pr
 - **Advantages**:
   - Reduce wait time in the ER
   - Create a centralised database to easily access historical patient data (i.e. How many diabetic patient's were met this year?)
- 
+
+## Project Purpose
+### Data
+- **mtsamples_with_rand_names.csv**: contains semi-structured and unstructured medical documents, which include de-identified information and mock patient names.
+### Description
+- 8 columns - all string
+  - **Unnamed**: index
+  - **description**: Quick resume of patient's situation
+  - **medical_specialty**: Field of medicine
+  - **sample_name**: identifier for each record
+  - **transcription**: Meeting description with doctor (doctor's notes), includes various elements such as MEDICATION, ASSESSMENT, ALLERGIES, PHYSICAL EXAMINATION (different for each row)
+  - **keywords**
+  - **first_name**
+  - **last_name**
+- 4999 rows
+- Missing Values
+  - 33 in transcription
+  - 1068 in keywords
+- Bias: Surgery Accounts for around 20% of the medical specialty in the dataset
+- **Unit of Analysis**: A unique patient examination
+
+ ## Methodology
+- Model Engineering
+  - Extracting "transcription" using NLP techniques
+  - Encode "medical_specialty" using one-hot encoding
+  - Create a single structured document for each patient
+ ## Results
+
+ ## Conclusion
