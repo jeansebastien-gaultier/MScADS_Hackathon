@@ -37,9 +37,19 @@ This Hackathon was organised by the Master of Science in Applied Data Science Pr
 
  ## Methodology
 - Model Engineering
-  - Extracting "transcription" using NLP techniques
-  - Encode "medical_specialty" using one-hot encoding
-  - Create a single structured document for each patient
+  - There were different ideas in terms of chunking (some parts of the CSV were very short, but the transcription is longer)
+
+- Tools:
+  - Document Loading: "CSVLoader" - Load the csv file into a list of Document files (text + metadata)
+  - Document Chunking: custom function using "RecursiveCharacterTextSplitter" in an attempt at keeping the biggest chunks together
+  - Embeddings: There are various models that can be used.
+    - MistralAI: crashed midway so I had to change
+    - CohereAI: stopped me at 1000 API calls
+    - HuggingFace
+    - Ollama
+  - Vectorstore: "Chroma" it is an open-source database where we can store our embeddings
+
  ## Results
+- After attempting to run various different LLM and embedding, we have decided to stay with the CohereAI and HuggingFace BGE embedding for the final deployment.
 
  ## Conclusion
