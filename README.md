@@ -53,3 +53,4 @@ This Hackathon was organised by the Master of Science in Applied Data Science Pr
 - After attempting to run various different LLM and embedding, we have decided to stay with the CohereAI and HuggingFace BGE embedding for the final deployment.
 
  ## Conclusion
+ - THE FINAL CODE IS IN THE FINAL FOLDER. The folder includes the code for the RAG model and the streamlit app. I am content with the work I have produced, I believe there is a lot that can be optimized and upgraded in the future. I really appreciated the opportunity to work on this Hackathon (even if I was by myself), because I believe it allowed me to do a lot of research on a subject that is also part of my Capstone Project. I believe there are a lot of things that I would want to add to my work so far, I started reading about RAPTOR (for high-level questions and I thought was interesting).
