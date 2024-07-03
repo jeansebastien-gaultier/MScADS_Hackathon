@@ -31,8 +31,8 @@ def load_data_and_prepare_embeddings():
     embeddings_model = HuggingFaceBgeEmbeddings(
         model_name="BAAI/bge-small-en", model_kwargs={"device": "cpu"}, encode_kwargs={"normalize_embeddings": True}
     )
-    loader = CSVLoader(file_path="/Users/jean-sebastiengaultier/Desktop/UChicago/Academic/Hackathon/test_data.csv")
-    #loader = CSVLoader(file_path="/Users/jean-sebastiengaultier/Desktop/UChicago/Academic/Hackathon/mtsamples_with_rand_names.csv")
+    #loader = CSVLoader(file_path="/Users/jean-sebastiengaultier/Desktop/UChicago/Academic/Hackathon/test_data.csv")
+    loader = CSVLoader(file_path="/Users/jean-sebastiengaultier/Desktop/UChicago/Academic/Hackathon/mtsamples_with_rand_names.csv")
     data = loader.load()
     print("Done Loading!")
     # text_splitter = CharacterTextSplitter(
