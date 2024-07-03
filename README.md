@@ -54,3 +54,12 @@ This Hackathon was organised by the Master of Science in Applied Data Science Pr
 
  ## Conclusion
  - THE FINAL CODE IS IN THE FINAL FOLDER. The folder includes the code for the RAG model and the streamlit app. I am content with the work I have produced, I believe there is a lot that can be optimized and upgraded in the future. I really appreciated the opportunity to work on this Hackathon (even if I was by myself), because I believe it allowed me to do a lot of research on a subject that is also part of my Capstone Project. I believe there are a lot of things that I would want to add to my work so far, I started reading about RAPTOR (for high-level questions and I thought was interesting).
+ - 
+
+ # Running the UI
+ The UI URL would not work (I do not understand why I cannot deploy on Streamlit). Please run the following command in your terminal to see the model run (this is with smaller amounts of data so that it does not take too long for you to have it working if you would like to test it out).
+ 
+ ```shell
+streamlit run Final\ Code/streamlit_app.py
+```
+
